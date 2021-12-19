@@ -18,7 +18,7 @@ Basic socket programming allows for the communciation between the bot (server), 
 ### Server
 The bot is run in the terminal. When it starts, it acts as a server and listens for clients. When clients connect, they are able to execute commands remotely. The server allows for several clients to be connected at a time, each being listened to on a separate thread. When commands are recieved by the client, they are parsed for correctness, and if allowed, executed with the provided commands through the server's connection to the bot.
 ### Client
-The client attempts to connect to the server, and if successful, awaits user input. Once input is given, the client writes to the server in attempt to execute a command.
+The client is not included in this repo. The client attempts to connect to the server, and if successful, awaits user input. Once input is given, the client writes to the server in attempt to execute a command.
 ### Protocol
 No particular protocol is used to read/write from server/client. If I were to make any additional changes, I would create a formal protocol with static-size write/reads and expected responses between the server/client.
 
