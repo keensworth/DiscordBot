@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args)
             throws LoginException, InterruptedException
     {
-        DiscordBot bot = new DiscordBot("<DISCORD-TOKEN>", "YOUTUBE-KEY");
+        DiscordBot bot = new DiscordBot("<DISCORD-TOKEN>", "<YOUTUBE-KEY>");
         bot.run();
     }
 }
