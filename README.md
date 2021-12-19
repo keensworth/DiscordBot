@@ -16,7 +16,7 @@ Extra administrative commands are provided, which can be executed through the co
 ## Client/Server
 Basic socket programming allows for the communciation between the bot (server), and many other clients.
 ### Server
-The bot is run in the terminal. When it starts, it acts as a server and listens for clients. When clients connect, they are able to execute commands remotely. The server allows for several clients to be connected at a time, each being listened to on a separate thread. When commands are recieved by the client, they are parsed for correctness, and if allowed, executed with the provided commands through the server's connection to the bot.
+The bot is run in the terminal. When it starts, it acts as a server and listens for clients. When clients connect, they are able to execute commands remotely. The server allows for several clients to be connected at a time, each being listened to on a separate thread. When commands are recieved by the client, they are parsed for correctness, and if allowed, executed with the provided parameters through the server's connection to the bot.
 ### Client
 The client is not included in this repo. The client attempts to connect to the server, and if successful, awaits user input. Once input is given, the client writes to the server in attempt to execute a command.
 ### Protocol
@@ -28,7 +28,7 @@ When the user executes a play command, the bot connects to the voice channel (pr
 ### Direct 
 A user may use the `.play <youtube-url>` to play a specific audio. This functionality is provided by LavaPlayer, which implements JDA's `AudioSendHandler`. LavaPlayer handles the transfer of audio packets to JDA, which outputs them through the virtual microphone of the bot. LavaPlayer requires solely the video id of the video to be retrieved. The audio id is retrieved from the user provided url in the command.
 ### Keywords
-A user may use the `.play keyword1 keyword2...` command to play audio by entering only keywords. When a user enters this command, the YouTube Data API is used to search YouTube for the most relevant video. This is returned as json text, which is parsed for the title, duration, and video id. LavaPlayer is then used to stream the audio. The title and duration are used in an embedded message to provide feedback to the user.
+A user may use the `.play keyword1 keyword2...` command to play audio by entering only keywords. When a user enters this command, the YouTube Data API is used to search YouTube for the most relevant video. This is returned as json text, which is parsed for the title, duration, and video id. LavaPlayer is then used to stream the audio, using the video id. The title and duration are used in an embedded message to provide feedback to the user.
 
 ## Gallery
 ### Client/Server
