@@ -32,8 +32,6 @@ A user may use the `.play keyword1 keyword2...` command to play audio by enterin
 
 ## Gallery
 ### Client/Server
-#### Server Console
-![](https://imgur.com/mB39r5k.png)
 #### Client Connecting
 ![](https://imgur.com/63DaKiZ.png)
 #### Server Accepting Client
@@ -55,3 +53,5 @@ Notice the deletion and recreation of the embedded message.
 ![](https://imgur.com/l7IsS8w.png)
 #### Stop Track
 ![](https://imgur.com/0Y34nl7.png)
+#### Server Console (displaying log of interactions)
+![](https://imgur.com/mB39r5k.png)
