@@ -36,7 +36,7 @@ A user may use the `.play keyword1 keyword2...` command to play audio by enterin
 ![](https://imgur.com/63DaKiZ.png)
 #### Server Accepting Client
 ![](https://imgur.com/0JlvHfe.png)
-#### Client Running Command
+#### Client Executing Command
 ![](https://imgur.com/98HCCRg.png)
 #### Server Received Command
 ![](https://imgur.com/IgAneGJ.png)
